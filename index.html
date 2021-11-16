@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" /> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Product List</title>
+</head>
+<body>
+    <h1>To Do List</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 mx-auto">
+                <div class="card card-body mt-3">
+                     <h2 class="heading display-5 pb-2">Add a New Task</h2>
+                    <form id="todolist-form" >
+                        <div class="row">
+                            <div class="col-md-2">
+                                <label for="id">ID*</label> 
+                            <input type="text" id="id" class="u-full-width" />
+                            </div>
+                            <div class="col-md-3">
+                                <label for="name">NAME</label> 
+                            <input type="text" id="name" class="u-full-width" />
+                            </div>
+                            <div class="col-md-2">
+                                <label for="description">DESCRIPTION</label>
+                                <input type="text" id="description" class="u-full-width" />
+                            </div>
+                           
+                            <div class="col-md-3">
+                                <input type="button" value="Add" class="u-full-width" onclick="addNewTask()" id="addBtn"/>
+                                <input type="button" value="Update" class="u-full-width" onclick="update()" id="updateBtn"/>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+             </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 mx-auto">
+                
+                <div id="table-container"></div>
+             </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

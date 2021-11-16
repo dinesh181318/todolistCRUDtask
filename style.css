@@ -1,0 +1,41 @@
+
+h1{
+    font-size: xx-large;
+    text-align: center;
+    margin-top: 2cm;
+}
+h2{
+    background-color: rgba(128, 128, 128, 0.11);
+}
+
+table, td{
+    border: 1px solid lightgray;
+    text-align: center;
+}
+
+#table-container{
+    margin-top: 20px;
+}
+#table-container table{
+    width: 100%;
+}
+
+#table-container table i{
+    cursor: pointer;
+}
+#updateBtn{
+    display: none;
+}
+#empid[disabled]{
+    opacity: .3;
+}
+#updateBtn, #addBtn{
+    margin-top: 20px;
+    padding: 0;
+    color: white;
+    background-color: blue;
+}
+i{
+    color: blue;
+    size: 1cm;
+}
